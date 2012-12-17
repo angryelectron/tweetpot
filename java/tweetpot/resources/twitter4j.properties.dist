@@ -1,0 +1,9 @@
+#
+#Visit http://dev.twitter.com to obtain keys, secrets, and tokens
+#
+debug=false
+oauth.consumerKey=
+oauth.consumerSecret=
+oauth.accessToken=
+oauth.accessTokenSecret=
+
