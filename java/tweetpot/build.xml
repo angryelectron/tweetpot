@@ -81,6 +81,7 @@
         
     <target name="-post-jar"> 
         <copy file="resources/tweetpot.sh" todir="${dist.dir}" />
+        <copy file="README.TXT" tofile="${dist.dir}/README.TXT" overwrite="true"/>
         <copy file="resources/twitter4j.properties.dist" todir="${dist.dir}" flatten="true" />
         <move file="${dist.dir}/twitter4j.properties.dist" tofile="${dist.dir}/twitter4j.properties" />
         <if>
@@ -120,10 +121,10 @@
                         <delete file="${target.dir}.tar.gz"/>
                     </then>
                 </if>
-                <tar destfile="${target.dir}.tar" basedir="${target.dir}" />
-                <gzip destfile="${target.dir}.tar.gz" src="${target.dir}.tar"/>                                    
+		<zip destfile="${target.dir}.zip">
+			<zipfileset dir="${target.dir}" prefix="${target.dir}" />
+		</zip>
                 <delete dir="${target.dir}"/>
-                <delete file="${target.dir}.tar"/>
             </then>
         </if>
         

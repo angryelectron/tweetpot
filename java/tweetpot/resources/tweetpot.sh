@@ -1,9 +1,5 @@
 #!/bin/sh
 
-#DIR=`dirname "$0"`
-#JAVA=`which java`
-#(cd $DIR; $JAVA -jar $DIR/tweetpot.jar "$@")
-
 PIDFILE=/var/run/tweetpot.pid
 DESC=tweetpot
 DAEMON="/usr/bin/java"

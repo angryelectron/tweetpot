@@ -71,4 +71,17 @@
     nbproject/build-impl.xml file. 
 
     -->
+
+	<target name="-post-jar">
+	        <copy file="README.TXT" tofile="${dist.dir}/README.TXT" overwrite="true"/>
+		<mkdir dir="hih4030-java" />
+		<copy todir="hih4030-java">
+			<fileset dir="${dist.dir}" />
+		</copy>	
+		<zip destfile="hih4030-java.zip">
+			<zipfileset dir="hih4030-java" prefix="hih4030"/>
+		</zip>
+		<delete dir="hih4030-java"/>
+	</target>
+
 </project>
