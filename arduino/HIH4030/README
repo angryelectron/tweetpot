@@ -18,6 +18,5 @@ DallasTemperature libraries are required to run the HumidityTemp sketch - see
 the example sketch comments for details.
 
 To download, visit http://github.com/angryelectron/tweetpot and use 'git', or click 
-the ZIP button to download.  Extract and copy ./tweetpot-master/arduino/HIH4030 to your
-Arduino library folder.
+the ZIP button to download.  Extract and copy ./tweetpot-master/arduino/HIH4030 to your Arduino library folder.
 
