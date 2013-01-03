@@ -1,4 +1,5 @@
 This is an Arduino 1.X library for the HIH4030 and HIH4031 temperature sensor.
+Get more information about this project at http://angryelectron.com/projects/tweetpot.
 
 The library aims to produce results that are as accurate as possible, allowing
 the user to adjust temperature, supply voltage, and use factory calibration
@@ -15,4 +16,8 @@ Two examples are included:  Humidity is a simple example without temperature
 compensation, and HumidityTemp uses the DS18S20 1-wire sensor.  The OneWire and
 DallasTemperature libraries are required to run the HumidityTemp sketch - see
 the example sketch comments for details.
+
+To download, visit http://github.com/angryelectron/tweetpot and use 'git', or click 
+the ZIP button to download.  Extract and copy ./tweetpot-master/arduino/HIH4030 to your
+Arduino library folder.
 
