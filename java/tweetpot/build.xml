@@ -81,7 +81,7 @@
         
     <target name="-post-jar"> 
         <copy file="resources/tweetpot.sh" todir="${dist.dir}" />
-        <copy file="README.TXT" tofile="${dist.dir}/README.TXT" overwrite="true"/>
+        <copy file="README.md" tofile="${dist.dir}/README.TXT" overwrite="true"/>
         <copy file="resources/twitter4j.properties.dist" todir="${dist.dir}" flatten="true" />
         <move file="${dist.dir}/twitter4j.properties.dist" tofile="${dist.dir}/twitter4j.properties" />
         <if>
